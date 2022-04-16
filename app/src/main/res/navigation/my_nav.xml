@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+
+
+        <action
+            android:id="@+id/action_loginFragment_to_currUserFragment"
+            app:destination="@id/currUserFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/currUserFragment"
+        android:name="com.example.login.currUserFragment"
+        android:label="fragment_curr_user"
+        tools:layout="@layout/fragment_curr_user" >
+
+        <action
+            android:id="@+id/action_currUserFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <argument
+            android:name="name"
+            app:argType="string"
+            android:defaultValue="null" />
+        <action
+            android:id="@+id/action_currUserFragment_to_usersListFragment"
+            app:destination="@id/usersListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/usersListFragment"
+        android:name="com.example.login.usersListFragment"
+        android:label="fragment_users_list"
+        tools:layout="@layout/fragment_users_list" >
+        <action
+            android:id="@+id/action_usersListFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+</navigation>

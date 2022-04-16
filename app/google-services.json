@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "640416523586",
+    "project_id": "signin-750ea",
+    "storage_bucket": "signin-750ea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:640416523586:android:0fe8c620cedc3d443ed4db",
+        "android_client_info": {
+          "package_name": "com.example.login"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "640416523586-sbotuni5dqr23u1f4u2ofiatktg2i8o2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUMbqZ_F1LnxVNH0tfvJb3ANG1qyhsDw0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "640416523586-sbotuni5dqr23u1f4u2ofiatktg2i8o2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
